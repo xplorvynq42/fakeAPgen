@@ -1,0 +1,77 @@
+                                                                                   
+@@@@@@@@@@    @@@@@@   @@@@@@@   @@@@@@@   @@@  @@@  @@@@@@@@  @@@  @@@   @@@@@@   
+@@@@@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@  @@@  @@@@@@@@  @@@  @@@  @@@@@@@   
+@@! @@! @@!  @@!  @@@  @@!  @@@  @@!  @@@  @@!  @@@  @@!       @@!  @@@  !@@       
+!@! !@! !@!  !@!  @!@  !@!  @!@  !@!  @!@  !@!  @!@  !@!       !@!  @!@  !@!       
+@!! !!@ @!@  @!@  !@!  @!@!!@!   @!@@!@!   @!@!@!@!  @!!!:!    @!@  !@!  !!@@!!    
+!@!   ! !@!  !@!  !!!  !!@!@!    !!@!!!    !!!@!!!!  !!!!!:    !@!  !!!   !!@!!!   
+!!:     !!:  !!:  !!!  !!: :!!   !!:       !!:  !!!  !!:       !!:  !!!       !:!  
+:!:     :!:  :!:  !:!  :!:  !:!  :!:       :!:  !:!  :!:       :!:  !:!      !:!   
+:::     ::   ::::: ::  ::   :::   ::       ::   :::   :: ::::  ::::: ::  :::: ::   
+ :      :     : :  :    :   : :   :         :   : :  : :: ::    : :  :   :: : :    
+                                                                                   
+
+                      
+
+
+
+
+# fakeAPgen
+
+fakeAPgen is a tool to create fake access points with customizable SSID and interface options.
+
+
+
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
+## Requirements
+
+- Python 3.x
+- airbase-ng
+
+
+##INSTALLATION
+
+Clone the repository:
+
+git clone https://github.com/savashxpert/fakeAPgen.git
+
+
+Change into the directory:
+
+
+cd fakeAPgen
+
+
+Run the script:
+
+
+python fakeAPgen.py -e "FakeSSID" -i wlan0mon -c 5
+
+
+
+
+##OPTIONS
+
+-e, --essid: SSID of the fake access points.
+-i, --interface: Wireless interface to use.
+-c, --count: Number of fake access points to create.
+
+
+
+##USAGE
+
+python fakeAPgen.py -e "FakeSSID" -i wlan0mon -c 5
+
+##NOTE
+
+Before running fakeAPgen, ensure that your wireless interface (`wlan0mon`) is in monitor mode. If it's not, you can set it to monitor mode using the following commands:
+
+sudo airmon-ng start wlan0
+
+
+
+
+
